@@ -1,0 +1,156 @@
+@font-face {
+    font-family: Mario font;
+    src: url('../fonts/Mario-Kart-DS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.game-board{
+    top: 30px;
+    background: linear-gradient(#87ceeb, #E0F6FF);
+    width: 80%;
+    height: 500px;
+    border-bottom: 16px solid rgb(28, 219, 21);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.pulos{
+    position: absolute;
+    font-family: Mario font;
+    left: 49%;
+    font-size: 80px;
+    color: black;
+}
+
+
+.nuvem {
+    
+    animation: nuvem-animation 7s linear infinite;
+
+}
+
+
+#nuvem1{
+    position: absolute;
+    width: 450px;
+    top: 0;
+    right: -450px;
+}
+
+
+.pipe{
+    
+    animation: pipe-animation 2s  linear infinite;
+
+}
+
+
+#pipe1{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+}
+
+
+.jump{
+    animation: jump 1s ease-out;
+}
+
+
+.mario{
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    
+
+}
+
+
+
+
+
+.texto{
+    
+    font-family: Mario font;
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+
+}
+
+.botaostart{
+    background-color: red;
+    position: relative;
+    height: 70px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 30px;
+    top: 50px;
+}
+
+
+
+
+
+@keyframes pipe-animation {
+    fron {
+
+        right: 0;
+
+    }
+
+    to {
+        right: 100%;
+        
+    }
+}
+
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes nuvem-animation {
+    fron {
+        right: 0;
+
+    }
+
+
+    to {
+        right: 100%;
+    }
+}
+
+
